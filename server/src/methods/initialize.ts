@@ -12,7 +12,7 @@ interface InitializeResult {
 
 export const initialize = (message: RequestMessage): InitializeResult => {
  return {
-    capabilities: {completionProvider: {}},
+    capabilities: {completionProvider: {}, textDocumentSync: 1},
     serverInfo: {
         name: "luis-lsp",
         version: '1.0.0'
